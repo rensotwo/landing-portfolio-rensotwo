@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----------------| Normalize |--------------->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <!----------------| Favicon |--------------->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!----------------| Icons - Boxicons |--------------->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!----------------| Css |--------------->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Renso Bautista</title>
+
+    <meta name="author" content="Renso Bautista">
+    <meta name="keywords" content="desarrollador, diseñador, HTML, CSS, JavaScript">
+    <meta name="description" content="Renso Bautista es un Ingeniero en Sistemas Computacionales especializado en el diseño y desarrollo de páginas web, sitios web, y aplicaciones web.">
+    <meta name="copyright" content="Copyright © Renso Bautista">
+    <meta name="robots" content="index">
+</head>
+<body>
+    <!----------------| Header |--------------->
+    <header class="header" id="header">
+        <div class="nav container">
+            <a href="#home" class="nav__logo">
+                <img src="assets/img/logo.webp" alt="Logo" class="nav__logo-img" width="40" height="40">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt-2' ></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#specialties" class="nav__link">
+                            <i class='bx bx-trophy' ></i>
+                            <span>Especialidades</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class='bx bx-briefcase' ></i>
+                            <span>Portafolio</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav__item">
+                        <a href="#articles" class="nav__link">
+                            <i class='bx bx-book-open'></i>
+                            <span>Artículos</span>
+                        </a>
+                    </li> -->
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-chat'></i>
+                            <span>Contactar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme change button -->
+            <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </div>
+    </header>
+
+    <!----------------| Main |--------------->
+    <main>
+        <!-- Home -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <div class="home__greetings">
+                        <div class="home__greetings-line"></div>
+                        <p class="home__greetings-text">
+                            Hola, mi nombre es
+                        </p>
+                    </div>
+
+                    <h1 class="home__name">Renso Bautista</h1>
+
+                    <p class="home__text">
+                        Soy un Ingeniero en Sistemas Computacionales especializado en la creación (y en ocasiones en el diseño) de páginas web, sitios web, y aplicaciones web.
+                    </p>
+
+                    <div class="home__buttons">
+                        <a href="./assets/pdf/cv.pdf" target="_blank" class="button">Currículum</a>
+                        <a href="#portfolio" class="button">Portafolio</a>
+                    </div>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__frame"></div>
+
+                    <picture class="home__img">
+                        <source srcset="assets/img/foto-de-perfil.avif" type="image/avif">
+                        <source srcset="assets/img/foto-de-perfil.webp" type="image/webp">
+                        <img width="640" height="360" src="assets/img/foto-de-perfil.jpg" alt="Foto de Perfil de Renso Bautista">
+                    </picture>
+                    
+                    <div class="home__social">
+                        <ul class="home__list">
+                            <li class="home__item">
+                                <a href="https://github.com/rensotwo" target="_blank" class="home__link" aria-label="Github">
+                                    <i class='bx bxl-github' ></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </li>
+                            <li class="home__item">
+                                <a href="https://www.linkedin.com/in/rensotwo/" target="_blank" class="home__link" aria-label="LinkedIn">
+                                    <i class='bx bxl-linkedin-square' ></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </li>
+                            <li class="home__item">
+                                <a href="https://twitter.com/rensotwo" target="_blank" class="home__link" aria-label="Twitter">
+                                    <i class='bx bxl-twitter' ></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li class="home__item">
+                                <a href="https://www.behance.net/rensotwo" target="_blank" class="home__link" aria-label="Behance">
+                                    <i class='bx bxl-behance' ></i>
+                                    <span>Behance</span>
+                                </a>
+                            </li>
+                            <li class="home__item">
+                                <a href="mailto:rensojeampier002@gmail.com" class="home__link" aria-label="Gmail">
+                                    <i class='bx bxs-envelope' ></i>
+                                    <span>Gmail</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="home__line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialties -->
+        <section class="specialties section" id="specialties">
+            <div class="specialties__container container grid">
+                <div class="specialties__skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Sass</span>
+                    <span>Git + GitHub</span>
+                    <span>WordPress</span>
+
+                    <div class="specialties__plus">
+                        <i class='bx bx-plus'></i>
+                    </div>
+                </div>
+
+                <div class="specialties__data">
+                    <div class="specialties__years">
+                        <span class="specialties__years-number">01+</span>
+                        <p class="specialties__years-text">Años de experiencia</p>
+                    </div>
+
+                    <div class="specialties__projects">
+                        <span class="specialties__projects-number">02</span>
+                        <p class="specialties__projects-text">Proyectos completados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="portfolio section" id="portfolio">
+            <div class="portfolio__title-content container">
+                <h2 class="section__title">Portafolio</h2>
+                <a href="#" class="section__link">Explorar más proyectos</a>
+            </div>
+
+            <div class="portfolio__content grid container">
+                <article class="portfolio__card">
+                    <a href="#" class="portfolio__content-card">
+                        <picture>
+                            <source
+                                media="(max-width: 320px)"
+                                sizes="(max-width: 320px) 320px"
+                                srcset="assets/img/cover-servilimd-320.avif,
+                                        assets/img/cover-servilimd-320.webp,
+                                        assets/img/cover-servilimd-320.jpg"
+                            >
+                            <source
+                                media="(max-width: 425px)"
+                                sizes="(max-width: 425px) 425px"
+                                srcset="assets/img/cover-servilimd-425.avif,
+                                        assets/img/cover-servilimd-425.webp,
+                                        assets/img/cover-servilimd-425.jpg"
+                            >
+                            <source
+                                media="(max-width: 1024px)"
+                                sizes="(max-width: 1024px) 1024px"
+                                srcset="assets/img/cover-servilimd-1024.avif,
+                                        assets/img/cover-servilimd-1024.webp,
+                                        assets/img/cover-servilimd-1024.jpg"
+                            >
+                            <source
+                                media="(max-width: 1440px)"
+                                sizes="(max-width: 1440px) 1440px"
+                                srcset="assets/img/cover-servilimd-1440.avif,
+                                        assets/img/cover-servilimd-1440.webp,
+                                        assets/img/cover-servilimd-1440.jpg"
+                            >
+
+                            <img loading="lazy" width="640" height="360" src="assets/img/cover-servilimd.jpg" class="portfolio__img" alt="Proyecto Servilimd"
+                                sizes="(max-width: 2000px) 2000px"
+                                srcset="assets/img/cover-servilimd.avif,
+                                        assets/img/cover-servilimd.webp,
+                                        assets/img/cover-servilimd.jpg"
+                            >
+                        </picture>
+                        <div class="portfolio__description">
+                            <span class="portfolio__text">HTML - CSS - JS</span>
+                            <h3 class="portfolio__subtitle">Servilimd</h3>
+                        </div>
+                    </a>
+
+                    <div class="portfolio__links">
+                        <a href="http://www.servilimd.com/" target="_blank" aria-label="Abrir demo de la pagina">
+                            <i class='bx bx-link' ></i>
+                        </a>
+                        <a href="https://github.com/rensotwo/landing-servilimd" target="_blank" aria-label="Repositorio de servilimd en GitHub">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="portfolio__card">
+                    <a href="#" class="portfolio__content-card">
+                        <picture>
+                            <source
+                                media="(max-width: 320px)"
+                                sizes="(max-width: 320px) 320px"
+                                srcset="assets/img/cover-portfolio-320.avif,
+                                        assets/img/cover-portfolio-320.webp,
+                                        assets/img/cover-portfolio-320.jpg"
+                            >
+                            <source
+                                media="(max-width: 425px)"
+                                sizes="(max-width: 425px) 425px"
+                                srcset="assets/img/cover-portfolio-425.avif,
+                                        assets/img/cover-portfolio-425.webp,
+                                        assets/img/cover-portfolio-425.jpg"
+                            >
+                            <source
+                                media="(max-width: 1024px)"
+                                sizes="(max-width: 1024px) 1024px"
+                                srcset="assets/img/cover-portfolio-1024.avif,
+                                        assets/img/cover-portfolio-1024.webp,
+                                        assets/img/cover-portfolio-1024.jpg"
+                            >
+                            <source
+                                media="(max-width: 1440px)"
+                                sizes="(max-width: 1440px) 1440px"
+                                srcset="assets/img/cover-portfolio-1440.avif,
+                                        assets/img/cover-portfolio-1440.webp,
+                                        assets/img/cover-portfolio-1440.jpg"
+                            >
+
+                            <img loading="lazy" width="640" height="360" src="assets/img/cover-portfolio.jpg" class="portfolio__img" alt="Proyecto Portafolio"
+                                sizes="(max-width: 2000px) 2000px"
+                                srcset="assets/img/cover-portfolio.avif,
+                                        assets/img/cover-portfolio.webp,
+                                        assets/img/cover-portfolio.jpg"
+                            >
+                        </picture>
+                        <div class="portfolio__description">
+                            <span class="portfolio__text">HTML - CSS - JS</span>
+                            <h3 class="portfolio__subtitle">Portafolio</h3>
+                        </div>
+                    </a>
+
+                    <div class="portfolio__links">
+                        <a href="http://rensotwo.com/" target="_blank" aria-label="Abrir proyecto">
+                            <i class='bx bx-link' ></i>
+                        </a>
+                        <a href="https://github.com/rensotwo/landing-portfolio-rensotwo" target="_blank" aria-label="Repositorio de portafolio en GitHub">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <a href="#" class="section__link--bottom">Explorar más proyectos</a>
+        </section>
+
+        <!-- Articles -->
+        <!-- <section class="articles section" id="articles">
+            <div class="articles__title-content container">
+                <h2 class="section__title section__title-articles">Artículos</h2>
+                <a href="#" class="section__link">Explorar más artículos</a>
+            </div>
+
+            <div class="articles__content grid container">
+                <article class="articles__post">
+                    <div class="articles__content-post">
+                        <span class="articles__date">21 Nov 2022</span>
+                        <a href="#" class="articles__link">
+                            <h3 class="articles__subtitle">¿Qué es ECMAScript?</h3>
+                        </a>
+                    </div>
+                    <p class="articles__text">ECMAScript es el estándar en el que esta basado JavaScript y lo encontraras en documento, libros o recursos en internet con la abreviación "ES" o simplemente ECMAScript.</p>
+                </article>
+
+                <article class="articles__post">
+                    <div class="articles__content-post">
+                        <span class="articles__date">04 Oct 2022</span>
+                        <a href="#" class="articles__link">
+                            <h3 class="articles__subtitle">¿Cómo empezar a programar?</h3>
+                        </a>
+                    </div>
+                    <p class="articles__text">Al inicio puede ser abrumador, más porque encontrarás mucha informacion en internet, recursos, libros, cursos, videos, entre mucha otra informacion, pero con objetivos claros</p>
+                </article>
+
+                <article class="articles__post">
+                    <div class="articles__content-post">
+                        <span class="articles__date">29 Sep 2022</span>
+                        <a href="#" class="articles__link">
+                            <h3 class="articles__subtitle">¿Por qué utilizar React?</h3>
+                        </a>
+                    </div>
+                    <p class="articles__text">¿Cuál es la importancia de utilizar React, cuando debemos elegir React para nuestra aplicación?</p>
+                </article>
+
+                <article class="articles__post">
+                    <div class="articles__content-post">
+                        <span class="articles__date">12 Jul 2022</span>
+                        <a href="#" class="articles__link">
+                            <h3 class="articles__subtitle">Instalar WSL2 en Windows 11</h3>
+                        </a>
+                    </div>
+                    <p class="articles__text">Como instalar Windows Subsystem Linux (WSL 2) en Windows 11</p>
+                </article>
+            </div>
+
+            <a href="#" class="section__link--bottom">Explorar más proyectos</a>
+        </section> -->
+
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <form class="contact__container container" id="contact-container">
+                <div class="contact__content">
+                    <div>
+                        <label for="contact-name">Nombres:</label>
+                        <input class="contact__name" type="text" name="user_name" id="contact-name">
+                    </div>
+
+                    <div>
+                        <label for="contact-email">Correo electrónico:</label>
+                        <input class="contact__email" type="user_email" name="user_email" id="contact-email">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="contact-message">Mensaje:</label>
+                    <textarea class="contact__message" name="user_message" id="contact-message"></textarea>
+                </div>
+
+                <p class="contact__sent" id="contact-sent"></p>
+
+                <button class="contact__button" type="submit">Enviar mensaje</button>
+            </form>
+
+            <picture class="contact__circles">
+                <source srcset="assets/img/circulos.avif" type="image/avif">
+                <source srcset="assets/img/circulos.webp" type="image/webp">
+                <img loading="lazy" src="assets/img/circulos.svg" alt="Decoración de contacto" aria-hidden="true">
+            </picture>
+        </section>
+    </main>
+
+    <!----------------| Footer |--------------->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <picture class="footer__img">
+                <img src="assets/img/logo.webp" alt="Logo footer" width="60" height="60">
+            </picture>
+
+            <div class="footer__content">
+                <ul class="footer__link">
+                    <li>
+                        <a href="#home">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#specialties">Especialidades</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portafolio</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#articles">Artículos</a>
+                    </li> -->
+                    <li>
+                        <a href="#contact">Contactar</a>
+                    </li>
+                </ul>
+
+                <a href="./assets/pdf/cv.pdf" class="button" download="">Descargar Currículum</a>
+            </div>
+
+            <div class="footer__info">
+                <span class="footer__copy">
+                    2022 Copyright &#169; Renso Bautista. Todos los derechos reservados.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!----------------| Scroll Up |--------------->
+    <a href="#" id="scroll-up" class="scrollup" aria-label="Subir al inicio de la pagina">
+        <i class='bx bx-up-arrow-alt' ></i>
+    </a>
+
+    <!----------------| Scrollreveal |--------------->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!----------------| Emailjs |--------------->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!----------------| Main Js |--------------->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
