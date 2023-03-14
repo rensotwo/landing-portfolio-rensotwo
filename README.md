@@ -13,3 +13,11 @@
 Link: https://rensotwo.com/
 
 ![preview img](/preview.png)
+
+Lighthouse Report Viewer Desktop
+
+![preview img](/lighthouse-report-viewer-desktop.png)
+
+Lighthouse Report Viewer Mobile
+
+![preview img](/lighthouse-report-viewer-mobile.png)

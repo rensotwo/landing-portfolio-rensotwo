@@ -569,6 +569,9 @@ body.dark-theme{
     text-align: center;
     margin-bottom: 5.625rem;
 }
+.footer__perfil-linkedin{
+    color: var(--text-color);
+}
 
 /* ----------------| Scroll Bar |--------------- */
 ::-webkit-scrollbar{
